@@ -11,6 +11,13 @@
 |
 */
 
+
+Route::get('/practice', function()
+{
+	echo 'Hello World';
+	echo "<br>weeee";
+});
+
 Route::get('/', function()
 {
 	return View::make('hello');
