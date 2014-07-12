@@ -1,0 +1,20 @@
+{
+	"Brian":{
+		"id" : 0,
+		"firstname" : "Brian",
+		"lastname" : "Finley",
+		"age" : 26
+	},
+	"Liz":{
+		"id" : 2,
+		"firstname" : "Liz",
+		"lastname" : "Silva",
+		"age" : 32
+	},
+	"Alice":{
+		"id" : 3,
+		"firstname" : "Alice",
+		"lastname" : "Spector",
+		"age" : 1
+	}
+}
