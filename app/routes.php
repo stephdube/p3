@@ -18,6 +18,11 @@ Route::get('/text', function()
 	return View::make('text');
 });
 
+Route::post('/text', function()
+{
+	return View::make('text');
+});
+
 // User generator
 Route::get('/users/{number?}', function($number = '3')
 {
