@@ -3,13 +3,13 @@
 @section('content')
 	<h1>Welcome!</h1>
 	<p>What do you need?</p>
-	<form method="POST" action ="/text">
+	<form method="POST" action ="/generated">
 		Generate text?<input type="checkbox" name="text">
 			<ul>
 				<li>Select number of paragraphs: 
-					<select>
+					<select name ='paragraph_number'>
 					<?php for ($i = 1; $i < 10; $i++):?>
-						<option value="<?php echo $i;?>"><?php echo $i;?></option>
+						<option value='<?php echo $i;?>'><?php echo $i;?></option>
 					<?php endfor;?>
 				</select>
 				</li>
@@ -23,7 +23,7 @@
 		Generate users?<input type="checkbox" name="users">
 			<ul>
 				<li>Select number of users: 
-					<select>
+					<select name="user_number">
 					<?php for ($i = 1; $i < 10; $i++):?>
 						<option value="<?php echo $i;?>"><?php echo $i;?></option>
 					<?php endfor;?>
@@ -38,4 +38,5 @@
 			</ul>
 		<input type="submit" value="Submit"></br>
 	</form>
+
 @stop
