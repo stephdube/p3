@@ -3,13 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>@yield('title', 'A Best Friend for Developers!')</title>
-	<link rel="stylesheet" href="p3-style.css" type="text/css">
+	<link rel="stylesheet" href="p3style.css" type="text/css">
 </head>
 
 <body>
-
-	@yield('content')	
-
-	<div><a href="/">Home</a></div>
+	<div id="container">
+		@yield('content')	
+	</div>
 </body>
+<footer>
+	<a href="/">Home</a>
+</footer>
 </html>

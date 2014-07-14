@@ -1,10 +1,13 @@
 @extends('_master')
 
 @section('content')
-	<h1>Welcome!</h1>
-	<p>What do you need?</p>
+	<div id="header">
+		<h1>A Best Friend For Developers</h1>
+		<h3>Generate random text or user data to populate your database</h3>
+	</div>
 	<form method="POST" action ="/generated">
-		Generate text?<input type="checkbox" name="text">
+		<b>What do you need?</b><br>
+		Generate text<input type="checkbox" name="text">
 			<ul>
 				<li>Select number of paragraphs: 
 					<select name ='paragraph_number'>
@@ -20,7 +23,7 @@
 					</select>
 				</li>
 			</ul>
-		Generate users?<input type="checkbox" name="users">
+		Generate users<input type="checkbox" name="users">
 			<ul>
 				<li>Select number of users: 
 					<select name="user_number">
