@@ -8,6 +8,8 @@
 	// Process form and display results
 	Route::post('/generated', function()
 	{
-		return View::make('generated');
+		$faker = Faker\Factory::create();
+		return View::make('generated')
+		->with('faker', $faker);
 	});
 ?>

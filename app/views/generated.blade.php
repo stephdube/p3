@@ -2,13 +2,17 @@
 
 @section('content')
 
-	<?php
-		// if text generator has been requested via form submission... 
-		if (Input::has("text")){
-			echo "<h3>Random Text</h3>";
+<?php
+
+
+	// if text generator has been requested via form submission... 
+	if (Input::has("text")){
+		echo "<h3>Random Text</h3>";
 			$paragraphs = Input::get("paragraph_number");
 			for($i=0;$i<$paragraphs;$i++){
-				echo "<p>paragraph</p>";
+				echo "<p>".$faker->text($maxNbChars = 200).
+				$faker->paragraph($nbSentences = 3).
+				"</p>";
 			}
 		}
 	?>
