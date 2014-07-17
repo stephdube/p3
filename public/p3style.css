@@ -20,7 +20,7 @@ body{
 }
 form{
 	padding:1em;
-	margin-top:12em;
+	margin-top:15em;
 	width:18%;
 	position:fixed;
 	font-family:Verdana;
@@ -29,7 +29,7 @@ form{
 }
 #generated{
 	padding:2em;
-	margin-top:6.5em;
+	margin-top:8em;
 	margin-left: 20em;
 	width:50%;
 }
