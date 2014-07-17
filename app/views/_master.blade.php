@@ -8,8 +8,19 @@
 
 <body>
 	<div id="container">
-		@yield('content')	
+
+		<div id="header">@yield('header')</div>
+
+		@yield('form')	
+
+		@yield('text')
+
+		@yield('users')
+
 	</div>
+
+	@yield('script')
+
 </body>
 <footer>
 	<a href="/">Home</a>

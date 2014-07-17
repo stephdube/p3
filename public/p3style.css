@@ -6,6 +6,7 @@
 form{
 	background-color:silver;
 	padding:1em;
+	float:left;
 }
 
 #header{

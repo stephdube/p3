@@ -6,10 +6,10 @@
 	});
 
 	// Process form and display results
-	Route::post('/generated', function()
+	Route::post('/', function()
 	{
 		$faker = Faker\Factory::create();
-		return View::make('generated')
+		return View::make('index')
 		->with('faker', $faker);
 	});
 ?>
