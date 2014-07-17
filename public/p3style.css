@@ -1,14 +1,18 @@
-#container{
+body{
+	padding-bottom: 2em;
 	padding-left:4em;
 	padding-right:4em;
+	background-color:silver;
+	margin:auto;
 }
-
 form{
-	background-color:silver;
 	padding:1em;
-	float:left;
+	background-color: white;
+	width:400px;
+	float:right;
 }
-
-#header{
-	background-color:silver;
+#generated{
+	padding:.5em;
+	float:left;
+	width:500px;
 }

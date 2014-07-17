@@ -7,22 +7,18 @@
 </head>
 
 <body>
-	<div id="container">
+<div id="header">
+	@yield('header')
+</div>
+<div id="form">
+	@yield('form')	
+</div>
+<div id="generated">
+	@yield('text')
 
-		<div id="header">@yield('header')</div>
-
-		@yield('form')	
-
-		@yield('text')
-
-		@yield('users')
-
-	</div>
-
+	@yield('users')
+</div>
 	@yield('script')
-
 </body>
-<footer>
-	<a href="/">Home</a>
-</footer>
+<footer></footer>
 </html>
