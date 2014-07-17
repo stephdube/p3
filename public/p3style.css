@@ -1,18 +1,41 @@
 body{
-	padding-bottom: 2em;
-	padding-left:4em;
-	padding-right:4em;
-	background-color:silver;
-	margin:auto;
+	background-color:#E0303A;
+}
+#container{
+	padding:1em;
+	width:1000px;
+ 	margin-top:10px;
+ 	margin-bottom:10px;
+	margin-right:auto;
+	margin-left: auto;
+	background-color:#57B5BD;
+}
+#header{
+	text-align: center;
+	font-family:Verdana;
+	letter-spacing:5px;
+	position:fixed;
+	background-color:#0A5B92;
+	color:#F5B807;
 }
 form{
 	padding:1em;
-	background-color: white;
-	width:400px;
-	float:right;
+	margin-top:12em;
+	width:18%;
+	position:fixed;
+	font-family:Verdana;
+	font-size:small;
+	background-color: #FF952F;
 }
 #generated{
-	padding:.5em;
-	float:left;
-	width:500px;
+	padding:2em;
+	margin-top:6.5em;
+	margin-left: 20em;
+	width:50%;
+}
+
+footer{
+	font-style:italic;
+	text-align:right;
+	padding:3em;
 }

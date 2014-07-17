@@ -11,10 +11,10 @@
 	<b>What do you need?</b><br>
 	Generate random text
 	<input type="checkbox" onclick="text()" id="textCheck"><br>
-	<div id="text_form"><!--Placeholder--></div>
+	<p id="text_form"><!--Placeholder--></p>
 	Generate random user data
 	<input type="checkbox" onclick="users()" id="usersCheck"><br>
-	<div id="user_form"><!--Placeholder--></div>
+	<p id="user_form"><!--Placeholder--></p>
 	<input type="submit" value="Submit"></br>
 </form>
 @stop
@@ -25,12 +25,12 @@
 function text(){
 	document
 	.getElementById("text_form")
-	.innerHTML="<ul><li>Select number of paragraphs:<select name ='paragraph_number'><?php for ($i = 1; $i < 10; $i++):?><option value='<?php echo $i;?>'><?php echo $i;?></option><?php endfor;?></select></ul>";
+	.innerHTML="I want <select name ='paragraph_number'><?php for ($i = 0; $i < 10; $i++):?><option value='<?php echo $i;?>'><?php echo $i;?></option><?php endfor;?></select> paragraphs";
 }
 function users(){
 	document
 	.getElementById("user_form")
-	.innerHTML="<ul><li>Select number of users:<select name='user_number'><?php for ($i = 1; $i < 100; $i++):?><option value='<?php echo $i;?>'><?php echo $i;?></option><?php endfor;?></select></li><li><input type='radio' name='name' value='first_name'>First name <input type='radio' name='name' value='full_name'>Full name <input type='radio' name='name' value='user_name'>User name</li><li>Address<input type='checkbox' name='address'></li><li>Birthdate<input type='checkbox' name='birthdate'></li><li>Company<input type='checkbox' name='company'></li><li>Picture<input type='checkbox' name='picture'></li></ul>";
+	.innerHTML="I want <select name='user_number'><?php for ($i = 0; $i < 100; $i++):?><option value='<?php echo $i;?>'><?php echo $i;?></option><?php endfor;?></select> users<br><input type='radio' name='name' value='first_name'>First name <input type='radio' name='name' value='full_name'>Full name <input type='radio' name='name' value='user_name'>User name<br>Address<input type='checkbox' name='address'><br>Birthdate<input type='checkbox' name='birthdate'><br>Company<input type='checkbox' name='company'><br>Picture<input type='checkbox' name='picture'><br>";
 }
 </script>
 @stop
@@ -87,7 +87,7 @@ if ($users>0)
 		if(Input::get("picture")){
 			echo "<img src='".$faker->imageUrl(100, 100, 'cats')."'><br>";
 		}
-		echo '</li>';
+		echo '</li><br>';
 	};
 	echo '</ol>';
 }

@@ -7,18 +7,15 @@
 </head>
 
 <body>
-<div id="header">
-	@yield('header')
-</div>
-<div id="form">
-	@yield('form')	
-</div>
-<div id="generated">
-	@yield('text')
-
-	@yield('users')
-</div>
+<div id="container">
+	<div id="header">@yield('header')</div>
+		@yield('form')
+	<div id="generated">
+		@yield('text')
+		@yield('users')
+	</div>
+</div><!--end container-->
 	@yield('script')
 </body>
-<footer></footer>
+<footer>Stephanie Dube for DWA-15 (Summer 2014)</footer>
 </html>
